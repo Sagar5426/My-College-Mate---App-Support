@@ -1,50 +1,52 @@
-# 📘 My College Mate
+# 📘 MyCollegeMate
 
-Thank you for using **My College Mate!**  
-This app is designed to be the only tool you need to manage your academic life — from tracking attendance to organizing your notes.
+Thank you for exploring **MyCollegeMate!** This app is designed to be the ultimate personal companion for your academic life—from intelligently tracking your attendance to organizing your notes and schedules seamlessly.
 
 ---
 
 ## 🚀 Key Features
 
-### 📊 Track Attendance
-Easily monitor your attendance for every subject, see your overall percentage, and know exactly how many classes you can skip.
+### 🤖 AI-Powered Timetable Scanner
+Instantly build your class schedule without typing. Just upload an image of your timetable, and our smart scanner securely extracts the details to automatically set up your weekly classes in seconds.
 
-### 🗓️ Timetable
-An intuitive and powerful timetable to manage your class schedule.
+### 🏝️ Live Activities & Dynamic Island
+Keep track of your ongoing academic schedule at a glance. View your current and upcoming classes right from your Lock Screen or the Dynamic Island without needing to open the app.
 
-### 📅 Daily Logs
-Effortlessly track which classes you attended or missed on any given day.
+### 📊 Smart Attendance Tracking
+Easily monitor your attendance for every subject, view your overall percentage, and know exactly how many classes you can safely afford to skip.
 
-### 🗂️ Organize Notes
-Import and organize all your notes, files, and PDFs.  
-You can even share them directly from other apps (like chat apps) right into **My College Mate**.
+### 📅 Daily Logs & Interactive Schedule
+Navigate an intuitive daily schedule to effortlessly track which classes you attended, missed, or had canceled on any given day. 
 
-### ☁️ iCloud Sync & Reminders
-Your data is always in sync across your devices with iCloud.  
-Get smart reminders so you never miss a class.
+### 🗂️ Note & Document Organization
+Import and organize all your notes, files, and PDFs by subject. You can even share documents directly from other applications (like your favorite chat apps) straight into your **MyCollegeMate** folders.
+
+### ☁️ iCloud Sync & Smart Reminders
+Your data stays perfectly in sync across all your Apple devices securely via iCloud. Get timely smart reminders so you never miss a lecture.
 
 ---
 
 ## 💬 Support
 
-If you have any questions, feedback, or need help with the app, please reach out to us:
+Have questions, feedback, or need a hand with the app? We're here to help!
 
-**Email:** sagarjangra880@gmail.com  
-We’ll do our best to respond to all inquiries within **48 hours**.
+* **Email:** [sagarjangra880@gmail.com](mailto:sagarjangra880@gmail.com)
+* **Response Time:** We aim to reply to all inquiries within **48 hours**.
 
 ---
 
 ## 🔒 Privacy Policy
 
-Your privacy is important to us. **My College Mate** is designed to be a personal tool.
+Your privacy is our top priority. **MyCollegeMate** is designed to be a secure, personal tool for managing your academic life.
 
-- All data you enter (subjects, timetable, attendance logs, etc.) is stored securely on your device.  
-- If iCloud sync is enabled, your data is synced privately to **your personal iCloud account**.  
-- We **do not** have access to your personal data.  
-- The app **does not collect** any personal information for analytics, marketing, or any other purpose.  
-- All data is **yours and yours alone**.
+### Personal App Data
+All the core data you enter—such as subjects, manual timetables, and attendance logs—is stored securely on your local device. If iCloud sync is enabled, this data is synced privately to your personal iCloud account. We **do not** have access to this personal academic data.
 
-If you have any questions about this privacy policy, please contact us at:  sagarjangra880@gmail.com 
+### AI Timetable Scanner
+Our automatic timetable generation feature utilizes the Gemini API. When you scan a timetable, the selected image is sent securely to Google solely to extract text and schedule information. The image is processed ephemerally and is **never** used to identify or track you.
 
----
+### Analytics & Crash Reporting
+To continually improve performance and squash bugs, MyCollegeMate uses Firebase (Google Analytics and Crashlytics). These services collect anonymous, non-identifiable data (such as device type, OS version, app interactions, and crash logs). This data is strictly used to enhance app stability and the overall user experience.
+
+### Contact Us
+If you have any questions regarding how your data is handled, please reach out at: [sagarjangra880@gmail.com](mailto:sagarjangra880@gmail.com)
