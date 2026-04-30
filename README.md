@@ -2,6 +2,7 @@
 
 Thank you for exploring **MyCollegeMate!** This app is designed to be the ultimate personal companion for your academic life—from intelligently tracking your attendance to organizing your notes and schedules seamlessly.
 
+Application link: https://apps.apple.com/in/app/mycollegemate-attendance/id6754844571
 ---
 
 ## 🚀 Key Features
