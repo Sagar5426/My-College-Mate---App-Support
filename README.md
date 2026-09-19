@@ -1,43 +1,147 @@
 <style>
-  /* Premium Dark Theme Overrides */
+  /* iOS Pro Dark Theme Overrides */
+  :root {
+    --bg-color: #000000;
+    --text-primary: #f5f5f7;
+    --text-secondary: #a1a1a6;
+    --card-bg: #1c1c1e;
+    --card-border: #38383a;
+    --accent: #0a84ff;
+  }
+
   body {
-    background-color: #09090b;
-    color: #e2e8f0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.7;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 24px;
+    -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3 { color: #f8fafc; font-weight: 600; tracking: tight; }
-  h2 { border-bottom: 1px solid #27272a; padding-bottom: 10px; margin-top: 48px; }
-  a { color: #3b82f6; text-decoration: none; transition: color 0.2s ease; }
-  a:hover { color: #60a5fa; text-decoration: underline; }
-  table { width: 100%; border-collapse: collapse; margin: 24px 0; background-color: #18181b; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-  th, td { border: 1px solid #27272a; padding: 16px; text-align: left; }
-  th { background-color: #27272a; color: #f8fafc; font-weight: 600; }
-  blockquote { border-left: 4px solid #3b82f6; background-color: #18181b; padding: 16px 20px; margin: 0; border-radius: 0 8px 8px 0; color: #94a3b8; }
-  hr { border: 0; height: 1px; background: #27272a; margin: 48px 0; }
-  .badge-container { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
-  .footer { text-align: center; margin-top: 64px; color: #71717a; font-size: 0.9em; }
+
+  h1, h2, h3 { 
+    color: #ffffff; 
+    font-weight: 700; 
+    letter-spacing: -0.02em; 
+  }
+  
+  h2 { 
+    border-bottom: 1px solid var(--card-border); 
+    padding-bottom: 12px; 
+    margin-top: 56px; 
+    font-size: 1.5rem;
+  }
+  
+  a { 
+    color: var(--accent); 
+    text-decoration: none; 
+    transition: opacity 0.2s ease; 
+  }
+  
+  a:hover { opacity: 0.8; }
+  
+  blockquote { 
+    border-left: 4px solid var(--accent); 
+    background-color: var(--card-bg); 
+    padding: 16px 20px; 
+    margin: 24px 0; 
+    border-radius: 0 12px 12px 0; 
+    color: var(--text-secondary); 
+    font-size: 0.95em;
+  }
+
+  hr { 
+    border: 0; 
+    height: 1px; 
+    background: var(--card-border); 
+    margin: 48px 0; 
+  }
+
+  /* Hero Section */
+  .hero { text-align: center; margin-bottom: 48px; }
+  .hero-title { font-size: 3rem; margin-bottom: 16px; background: linear-gradient(135deg, #ffffff, #a1a1a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-subtitle { font-size: 1.2rem; color: var(--text-secondary); font-weight: 500; margin-bottom: 8px; }
+  .hero-desc { color: var(--text-secondary); font-size: 1rem; margin-bottom: 32px; }
+  
+  .badge-container { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px; }
+  .badge-container img { border-radius: 6px; }
+
+  /* Premium Feature Cards */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  @media (min-width: 600px) {
+    .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .feature-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 24px;
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+
+  .feature-card:hover {
+    background: #242426;
+    transform: translateY(-2px);
+  }
+
+  .feature-icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+    display: inline-block;
+    background: #2c2c2e;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+  }
+
+  .feature-desc {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  .footer { 
+    text-align: center; 
+    margin-top: 80px; 
+    color: var(--text-secondary); 
+    font-size: 0.9em; 
+  }
 </style>
 
-<div align="center">
-  <h1>📘 MyCollegeMate</h1>
+<div class="hero">
+  <h1 class="hero-title">MyCollegeMate</h1>
   
   <div class="badge-container">
-    <img src="https://img.shields.io/badge/Platform-iOS%2017.0%2B-0a84ff?style=for-the-badge&logo=apple&logoColor=white" alt="iOS Platform" />
-    <img src="https://img.shields.io/badge/Swift-SwiftUI-f05138?style=for-the-badge&logo=swift&logoColor=white" alt="SwiftUI" />
-    <img src="https://img.shields.io/badge/iCloud-Sync-34c759?style=for-the-badge&logo=icloud&logoColor=white" alt="iCloud" />
-    <img src="https://img.shields.io/badge/Privacy-Privacy%20First-32d74b?style=for-the-badge" alt="Privacy First" />
+    <img src="https://img.shields.io/badge/Platform-iOS%2017.0%2B-0a84ff?style=flat-square&logo=apple&logoColor=white" alt="iOS Platform" />
+    <img src="https://img.shields.io/badge/Swift-SwiftUI-f05138?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" />
+    <img src="https://img.shields.io/badge/iCloud-Sync-34c759?style=flat-square&logo=icloud&logoColor=white" alt="iCloud" />
+    <img src="https://img.shields.io/badge/Privacy-Privacy%20First-32d74b?style=flat-square" alt="Privacy First" />
   </div>
 
-  <p><b>The ultimate personal academic companion for iOS</b></p>
-  <p><i>Track attendance, scan timetables with AI, and organize course notes seamlessly.</i></p>
-  <br/>
+  <p class="hero-subtitle">The ultimate personal academic companion for iOS</p>
+  <p class="hero-desc">Track attendance, scan timetables with AI, and organize course notes seamlessly.</p>
 
   <a href="https://apps.apple.com/in/app/mycollegemate-attendance/id6754844571">
-    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="50">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="52">
   </a>
 </div>
 
@@ -49,14 +153,45 @@
 
 ## 🚀 Key Features
 
-| Feature | Description |
-| :--- | :--- |
-| 🤖 **AI Timetable Scanner** | Snap a picture of your physical or digital schedule. Powered by Google's Gemini API, the app securely extracts course names, times, and venues to build your interactive weekly schedule in seconds. |
-| 🏝️ **Live Activities** | View your ongoing and upcoming classes at a glance directly from your Lock Screen or Dynamic Island without opening the app. |
-| 📊 **Smart Attendance Tracker** | Monitor subject-wise percentages and automatically calculate how many classes you can safely skip or need to attend to hit your target goals. |
-| 📅 **Interactive Daily Logs** | Navigate an intuitive daily schedule to mark classes as attended, missed, or cancelled with a single tap. |
-| 🗂️ **Document Hub** | Store, organize, and view PDFs and lecture notes grouped by subject. Import directly via the iOS Share Sheet from messaging apps or file managers. |
-| ☁️ **iCloud Sync** | Seamless end-to-end synchronization across all your Apple devices via iCloud, alongside smart scheduled class notifications. |
+<div class="feature-grid">
+  
+  <div class="feature-card">
+    <div class="feature-icon">🤖</div>
+    <h3 class="feature-title">AI Timetable Scanner</h3>
+    <p class="feature-desc">Snap a picture of your physical or digital schedule. Powered by Google's Gemini API, the app securely extracts course names, times, and venues in seconds.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon">🏝️</div>
+    <h3 class="feature-title">Live Activities</h3>
+    <p class="feature-desc">View your ongoing and upcoming classes at a glance directly from your Lock Screen or Dynamic Island without even opening the app.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon">📊</div>
+    <h3 class="feature-title">Smart Attendance</h3>
+    <p class="feature-desc">Monitor subject-wise percentages and automatically calculate how many classes you can safely skip or need to attend to hit your target goals.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon">📅</div>
+    <h3 class="feature-title">Interactive Daily Logs</h3>
+    <p class="feature-desc">Navigate an intuitive daily schedule to mark classes as attended, missed, or cancelled with a single tap.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon">🗂️</div>
+    <h3 class="feature-title">Document Hub</h3>
+    <p class="feature-desc">Store, organize, and view PDFs and lecture notes grouped by subject. Import directly via the iOS Share Sheet.</p>
+  </div>
+
+  <div class="feature-card">
+    <div class="feature-icon">☁️</div>
+    <h3 class="feature-title">iCloud Sync</h3>
+    <p class="feature-desc">Seamless end-to-end synchronization across all your Apple devices via iCloud, alongside smart scheduled class notifications.</p>
+  </div>
+
+</div>
 
 ## 🛠️ Tech Stack & Architecture
 
