@@ -60,6 +60,15 @@
 
   /* Hero Section */
   .hero { text-align: center; margin-bottom: 48px; }
+  
+  .app-logo {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 24px auto;
+    display: block;
+    filter: drop-shadow(0 10px 20px rgba(10, 132, 255, 0.15));
+  }
+
   .hero-title { font-size: 3rem; margin-bottom: 16px; background: linear-gradient(135deg, #ffffff, #a1a1a6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   .hero-subtitle { font-size: 1.2rem; color: var(--text-secondary); font-weight: 500; margin-bottom: 8px; }
   .hero-desc { color: var(--text-secondary); font-size: 1rem; margin-bottom: 32px; }
@@ -128,6 +137,8 @@
 </style>
 
 <div class="hero">
+  <img class="app-logo" alt="MyCollegeMate Logo" src="https://github.com/user-attachments/assets/5fc6ea45-5141-47d1-8312-152d0bd3cb0f" />
+  
   <h1 class="hero-title">MyCollegeMate</h1>
   
   <div class="badge-container">
