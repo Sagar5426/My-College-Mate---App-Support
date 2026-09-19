@@ -131,7 +131,7 @@
   <h1 class="hero-title">MyCollegeMate</h1>
   
   <div class="badge-container">
-    <img src="https://img.shields.io/badge/Platform-iOS%2017.0%2B-0a84ff?style=flat-square&logo=apple&logoColor=white" alt="iOS Platform" />
+    <img src="https://img.shields.io/badge/Platform-iOS%2026.0%2B-0a84ff?style=flat-square&logo=apple&logoColor=white" alt="iOS Platform" />
     <img src="https://img.shields.io/badge/Swift-SwiftUI-f05138?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" />
     <img src="https://img.shields.io/badge/iCloud-Sync-34c759?style=flat-square&logo=icloud&logoColor=white" alt="iCloud" />
     <img src="https://img.shields.io/badge/Privacy-Privacy%20First-32d74b?style=flat-square" alt="Privacy First" />
