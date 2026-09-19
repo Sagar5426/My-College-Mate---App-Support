@@ -228,5 +228,5 @@ Have questions, bug reports, or feature requests? Reach out anytime.
 - ⏱️ **Response Time:** We aim to respond to all inquiries within 48 hours.
 
 <div class="footer">
-  <p>© 2026 Jangra Sagar. Made with ❤️ in Gurugram.</p>
+  <p>© 2026 Sagar Jangra. Made with ❤️ in Gurugram.</p>
 </div>
