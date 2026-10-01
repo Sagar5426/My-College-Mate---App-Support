@@ -202,6 +202,12 @@
     <p class="feature-desc">Seamless end-to-end synchronization across all your Apple devices via iCloud, alongside smart scheduled class notifications.</p>
   </div>
 
+  <div class="feature-card">
+    <div class="feature-icon">👑</div>
+    <h3 class="feature-title">MyCollegeMate Pro</h3>
+    <p class="feature-desc">Upgrade via flexible subscriptions or one-time purchases to unlock an completely ad-free experience and premium features.</p>
+  </div>
+
 </div>
 
 ## 🛠️ Tech Stack & Architecture
@@ -210,6 +216,7 @@
 - **Widget Integration:** WidgetKit, ActivityKit (Live Activities & Dynamic Island)
 - **AI Processing:** Google Gemini API (Ephemeral vision-to-text parsing)
 - **Data Syncing:** Apple CloudKit / iCloud Container
+- **Monetization & Ads:** Apple StoreKit (In-App Purchases & Subscriptions), Google Mobile Ads SDK (AdMob)
 - **Analytics:** Firebase Analytics & Crashlytics (Anonymous telemetry)
 
 ## 🔒 Privacy Policy
@@ -218,6 +225,17 @@ Your privacy is paramount. **MyCollegeMate** is built strictly on privacy-by-des
 
 ### Personal App Data
 All core data—including subject lists, timetable schedules, notes, and attendance histories—is stored exclusively on your local device. If iCloud is enabled, data is synchronized via your private Apple iCloud container. **We do not collect, host, or have access to your personal academic records.**
+
+### In-App Purchases & Subscriptions
+All transactions, subscriptions, and payment processing are managed exclusively by Apple via StoreKit and your Apple ID account:
+- We **do not** collect, store, or process your credit card, payment details, or billing information.
+- Apple provides us with anonymized purchase receipts and entitlement status solely to grant access to premium Pro features and suppress advertisements.
+
+### Advertising (Google Ads / AdMob)
+To keep core app features accessible, **MyCollegeMate** displays advertisements served by **Google AdMob / Google Mobile Ads**:
+- Google AdMob may collect and process pseudonymous identifiers (such as Advertising Identifier / IDFA where permitted, or Identifier for Vendors / IDFV), device information, IP address, and app interaction data to display advertisements and evaluate ad performance.
+- We adhere strictly to Apple's **App Tracking Transparency (ATT)** framework. You can grant or decline tracking permission at any time via your iOS device settings (`Settings > Privacy & Security > Tracking`).
+- For detailed information on how Google manages advertising data, visit [Google's Privacy Policy](https://policies.google.com/privacy).
 
 ### AI Timetable Scanning
 When utilizing the automated timetable scanner feature:
@@ -230,6 +248,15 @@ To ensure stability and fix crashes:
 - Anonymous metrics are collected via Firebase Analytics and Crashlytics.
 - Information gathered includes device model, iOS version, app performance logs, and stack traces during crashes.
 - This telemetry contains **zero personally identifiable information (PII)** and is strictly used to maintain and improve application performance.
+
+## 💳 Subscriptions & In-App Purchases
+
+MyCollegeMate offers optional auto-renewable subscriptions and/or non-consumable in-app purchases to unlock premium functionality:
+
+- **Payment:** Payment will be charged to your Apple ID account at confirmation of purchase.
+- **Auto-Renewal:** Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period.
+- **Managing Subscriptions:** You can view, manage, or cancel your active subscriptions at any time by going to your Account Settings on the App Store after purchase.
+- **Terms of Use:** All purchases are subject to Apple's standard [Terms of Use (EULA)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/).
 
 ## 💬 Support & Contact
 
